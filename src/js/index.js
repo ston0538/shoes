@@ -9,7 +9,6 @@ const sizes = document.querySelector(".sizes");
 container.addEventListener("mousemove", (e) => {
   let xAxis = (window.innerWidth / 2 - e.pageX) / 10;
   let yAxis = (window.innerHeight / 2 - e.pageY) / 10;
-  console.log(xAxis);
   card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
 });
 
